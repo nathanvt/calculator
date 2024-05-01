@@ -1,0 +1,158 @@
+/* Style */
+body {
+    background-color: rgb(129, 165, 129);
+    display: flex;
+    justify-content: center;
+}
+
+body>* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.calculator-body {
+    width: 360px;
+    /* border: solid 2px #000; */
+    border-radius: 3rem;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0px 6px 24px #000;
+}
+
+.top {
+    color: #AAA;
+    font-style: italic;
+    font-weight: 600;
+    margin: -0.25rem 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solar {
+    height: 30px;
+    width: 140px;
+    background-color: #333 /* #453934 */;
+    /* border: solid 2px #000; */
+    border-radius: 0.75rem;
+    box-shadow: inset 0px 0px 6px #222;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.solar>div {
+    background-color: rgba(250, 250, 250, .10);
+    height: 90px;
+    width: 2px;
+}
+
+.calculator-screen {
+    /* border: solid 2px #000; */
+    border-radius: 1.5rem;
+    height: 7rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    background-color: #333;
+    box-shadow: inset 0px 0px 12px #222;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end ;
+    justify-content: flex-end;
+}
+
+.calculator-screen p {
+    font-family: sans-serif;
+    text-align: right;
+    color: #DDD;
+    margin: 6px;
+    /* text-shadow: rgba(255, 255, 255, 0.05) 0px 0 10px; */
+
+}
+
+.return {
+    font-size: 40px;
+    margin-bottom: 1rem !important;
+}
+
+.controls {
+    /* border: solid 2px #000; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button.digits:hover, button.operators:hover, button.modifier:hover {
+    background-color: #777;
+}
+
+/* button.operators:hover {
+    background-color: goldenrod;
+} */
+
+button.clear {
+    background-color: #F86624 !important;
+}
+
+button.clear:hover {
+    background-color: #f8773b !important;
+}
+
+/* button.only {
+    background-color: darkcyan !important;
+    color: #333 !important;
+}
+
+button.only:hover {
+    background-color: rgb(7, 153, 153) !important;
+} */
+
+.controls button {
+    font-family: var(--primary);
+    font-size: 22px;
+    font-weight: 500;;
+    margin: 0.25rem;
+    width: 77px;
+    height: 76px;
+    border-radius: 50%;
+    /* border: solid 2px #555; */
+    border: none;
+    color: white;
+    background-color: #555;
+    cursor: pointer;
+    
+}
+
+.controls button:hover {
+    transform: translateY(-3px);
+}
+
+.controls button:active {
+    transform: translateY(0px);
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+    border-radius: 3rem !important;
+}
+
+.pad-1rem {
+    padding: 1rem;
+}
+
+.mar-05rem {
+    margin: 0.5rem;;
+}
+
+.mar-1rem {
+    margin: 1rem;;
+}
